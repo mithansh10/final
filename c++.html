@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A collection of beginner C programming exercises and source files."
+    />
+    <title>C &amp; C++ Practice | Mithansh</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1d1924;
+        --muted: #504b5a;
+        --paper: #f7f4fb;
+        --surface: #fff;
+        --line: #a29eaa;
+        --green: #3f2e56;
+        --lime: #998eaa;
+        --coral: #763756;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0 24px;
+        color: var(--ink);
+        background:
+          radial-gradient(#a69eac 0.7px, transparent 0.7px), var(--paper);
+        background-size: 18px 18px;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .site-header,
+      main,
+      footer {
+        width: min(100%, 1000px);
+        margin-inline: auto;
+      }
+
+      .site-header {
+        display: flex;
+        min-height: 76px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .back-link,
+      footer a {
+        color: var(--green);
+        font-size: 13px;
+        font-weight: 750;
+        text-decoration: none;
+      }
+
+      .back-link:hover,
+      footer a:hover,
+      .exercise-card a:hover {
+        color: var(--coral);
+      }
+
+      .language-label,
+      .eyebrow {
+        color: var(--green);
+        font-size: 10px;
+        font-weight: 850;
+        letter-spacing: 0.15em;
+      }
+
+      .intro {
+        max-width: 680px;
+        padding: 70px 0 56px;
+      }
+
+      .intro .eyebrow {
+        margin: 0 0 10px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(42px, 8vw, 64px);
+        letter-spacing: -0.04em;
+        line-height: 1.08;
+      }
+
+      h1 span {
+        color: var(--coral);
+      }
+
+      .lead {
+        max-width: 580px;
+        margin: 16px 0 10px;
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .note code {
+        padding: 2px 6px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        color: var(--green);
+        background: var(--surface);
+      }
+
+      .exercise-section {
+        padding: 30px 0 72px;
+        border-top: 1px solid var(--line);
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 20px;
+      }
+
+      .section-heading .eyebrow {
+        margin: 0 0 5px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(30px, 5vw, 38px);
+        line-height: 1.2;
+      }
+
+      .exercise-count {
+        margin: 0 0 4px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .exercise-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .exercise-card {
+        min-width: 0;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+        transition:
+          border-color 160ms ease,
+          transform 160ms ease,
+          box-shadow 160ms ease;
+      }
+
+      .exercise-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--green);
+        box-shadow: 4px 4px 0 var(--lime);
+      }
+
+      .exercise-number {
+        color: var(--coral);
+        font-size: 11px;
+        font-weight: 850;
+        letter-spacing: 0.1em;
+      }
+
+      .exercise-card h3 {
+        margin: 10px 0 5px;
+        font-size: 23px;
+      }
+
+      .exercise-card p {
+        min-height: 44px;
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .exercise-card a {
+        color: var(--green);
+        font-size: 13px;
+        font-weight: 800;
+        text-underline-offset: 4px;
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--coral);
+        outline-offset: 4px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 20px 0 30px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding-inline: 18px;
+        }
+
+        .site-header {
+          min-height: 68px;
+        }
+
+        .language-label {
+          font-size: 8px;
+          text-align: right;
+        }
+
+        .intro {
+          padding: 54px 0 42px;
+        }
+
+        .lead {
+          font-size: 15px;
+        }
+
+        .exercise-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .exercise-card p {
+          min-height: auto;
+        }
+
+        footer {
+          flex-direction: column;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="back-link" href="index.html">
+        <span aria-hidden="true">←</span> Back to portfolio
+      </a>
+      <span class="language-label">PROGRAMMING PRACTICE</span>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p class="eyebrow">SMALL PROGRAMS · BIG IDEAS</p>
+        <h1>C &amp; C++ Practice<span>.</span></h1>
+        <p class="lead">
+          A collection of beginner programming exercises for arithmetic,
+          geometry, and conditional logic.
+        </p>
+        <p class="note">
+          The current examples are written in C (<code>.c</code> source files).
+        </p>
+      </section>
+
+      <section class="exercise-section" aria-labelledby="exercises-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SOURCE FILES</p>
+            <h2 id="exercises-title">Exercises</h2>
+          </div>
+          <p class="exercise-count">10 programs</p>
+        </div>
+
+        <div class="exercise-grid">
+          <article class="exercise-card">
+            <span class="exercise-number">01</span>
+            <h3>Add two numbers</h3>
+            <p>Read two values and print their sum.</p>
+            <a href="c/add2numbers.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">02</span>
+            <h3>Rectangle area</h3>
+            <p>Calculate area from a length and width.</p>
+            <a href="c/areaofrectangle.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">03</span>
+            <h3>Triangle area</h3>
+            <p>Practice calculating a triangle's area.</p>
+            <a href="c/areaoftriangle.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">04</span>
+            <h3>Square area</h3>
+            <p>Find the area of a square from its side.</p>
+            <a href="c/areaofsquare.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">05</span>
+            <h3>Simple interest</h3>
+            <p>Calculate simple interest from input values.</p>
+            <a href="c/simpleintrest.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">06</span>
+            <h3>Vowel checker</h3>
+            <p>
+              Use a switch statement to check a character is vowel or consonant.
+            </p>
+            <a href="c/vowelorconsonat.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">07</span>
+            <h3>Circle area</h3>
+            <p>Calculate a circle's area using its radius.</p>
+            <a href="c/areaofcircle.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">08</span>
+            <h3>multiply 2 numbers</h3>
+            <p>Try two common operations with a pair of numbers.</p>
+            <a href="c/multiply2numbers.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">09</span>
+            <h3>Add three numbers</h3>
+            <p>Read and sum three values.</p>
+            <a href="c/add3numbers.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="exercise-card">
+            <span class="exercise-number">10</span>
+            <h3>Adding two numbers</h3>
+            <p>A second version of a basic addition program.</p>
+            <a href="c/add2numbers2.c"
+              >View C source <span aria-hidden="true">↗</span></a
+            >
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Practice makes progress.</span>
+      <a href="index.html"
+        >Mithansh's portfolio</a
+      >
+    </footer>
+  </body>
+</html>

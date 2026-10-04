@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Blue bird">
+  <rect width="200" height="200" rx="18" fill="#eef2fa"/>
+  <path d="M38 115c21-39 75-62 116-27 15 13 20 31 12 48-15 30-54 37-93 22-21-8-36-24-35-43Z" fill="#315ea8"/>
+  <path d="m147 103 34 10-32 15" fill="#e5684b"/>
+  <circle cx="128" cy="99" r="6" fill="#202333"/>
+  <path d="M59 130c22-33 49-36 70-13-24 5-40 19-49 39" fill="#9ab8ed"/>
+</svg>

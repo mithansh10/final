@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Illustration of a rabbit">
+  <rect width="640" height="480" rx="32" fill="#f4f5ef"/>
+  <circle cx="320" cy="280" r="145" fill="#c9ec79"/>
+  <ellipse cx="278" cy="119" rx="37" ry="99" transform="rotate(-12 278 119)" fill="#fff" stroke="#202925" stroke-width="12"/>
+  <ellipse cx="362" cy="119" rx="37" ry="99" transform="rotate(12 362 119)" fill="#fff" stroke="#202925" stroke-width="12"/>
+  <ellipse cx="278" cy="118" rx="15" ry="65" fill="#e5684b"/><ellipse cx="362" cy="118" rx="15" ry="65" fill="#e5684b"/>
+  <circle cx="320" cy="276" r="112" fill="#fff" stroke="#202925" stroke-width="12"/>
+  <ellipse cx="279" cy="257" rx="10" ry="15" fill="#202925"/><ellipse cx="361" cy="257" rx="10" ry="15" fill="#202925"/>
+  <path d="m320 280-12 10 12 10 12-10-12-10Zm0 20c-12 18-27 20-39 9m39-9c12 18 27 20 39 9" fill="none" stroke="#202925" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="257" cy="300" r="14" fill="#e5684b" opacity=".55"/><circle cx="383" cy="300" r="14" fill="#e5684b" opacity=".55"/>
+</svg>

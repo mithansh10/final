@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Yellow sun">
+  <rect width="200" height="200" rx="18" fill="#faf5e7"/>
+  <g stroke="#d79e22" stroke-width="8" stroke-linecap="round">
+    <path d="M100 24v17m0 118v17M24 100h17m118 0h17M46 46l12 12m84 84 12 12m0-108-12 12m-84 84-12 12"/>
+  </g>
+  <circle cx="100" cy="100" r="43" fill="#f2c94c"/>
+  <circle cx="85" cy="94" r="4" fill="#594278"/><circle cx="115" cy="94" r="4" fill="#594278"/>
+  <path d="M84 111c9 12 23 12 32 0" fill="none" stroke="#594278" stroke-width="5" stroke-linecap="round"/>
+</svg>

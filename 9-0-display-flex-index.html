@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
+  <style>
+    p {
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .container {
+      padding: 10px;
+      background-color: gold;
+      display: flex;
+      gap: 10px;
+    }
+
+    
+
+  </style>
+  
+    <style data-portfolio-theme>
+:root {
+  color-scheme: light;
+  --ink: #1d1924;
+  --muted: #504b5a;
+  --paper: #f7f4fb;
+  --surface: #fff;
+  --line: #a29eaa;
+  --green: #3f2e56;
+  --lime: #998eaa;
+  --coral: #763756;
+}
+
+:where(*, *::before, *::after) {
+  box-sizing: border-box;
+}
+
+:where(html) {
+  scroll-behavior: smooth;
+}
+
+:where(body) {
+  margin: 0;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image: radial-gradient(#a69eac 0.7px, transparent 0.7px);
+  background-size: 18px 18px;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  color: var(--green);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+:where(a) {
+  color: var(--green);
+  text-underline-offset: 4px;
+}
+
+:where(a:hover) {
+  color: var(--coral);
+}
+
+:where(button, input, select, textarea) {
+  font: inherit;
+}
+
+:where(button, input[type="button"], input[type="submit"], input[type="reset"]) {
+  color: var(--surface);
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+:where(button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover) {
+  border-color: var(--coral);
+  background-color: var(--coral);
+}
+
+:where(:focus-visible) {
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(html) {
+    scroll-behavior: auto;
+  }
+}
+
+    </style>
+  </head>
+
+<body>
+  <div class="container">
+    <p>Page Layout Methods</p>
+
+    <li><a href="./9-0-display-flex-html-table.html">HTML Table</a></li>
+    <li><a href="./9-0-display-flex-inline-block.html">Inline-Block</a></li>
+    <li><a href="./9-0-display-flex-absolute-position.html">Absolute Positioning</a></li>
+    <li><a href="./9-0-display-flex-float.html">Float</a></li>
+    <li><a href="./9-0-display-flex-flex.html">Flexbox</a></li>
+
+  </div>
+</body>
+
+</html>

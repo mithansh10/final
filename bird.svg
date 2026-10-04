@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Illustration of a bird">
+  <rect width="640" height="480" rx="32" fill="#f4f5ef"/>
+  <circle cx="320" cy="240" r="150" fill="#c9ec79"/>
+  <path d="M190 284c0-90 57-151 144-151 54 0 96 28 116 70l66 12-59 43c-10 76-63 128-143 128-75 0-124-40-124-102Z" fill="#1f5148" stroke="#202925" stroke-width="12" stroke-linejoin="round"/>
+  <path d="m501 203 89 23-82 31" fill="#e5684b" stroke="#202925" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="382" cy="191" r="27" fill="#fff"/><circle cx="389" cy="193" r="11" fill="#202925"/>
+  <path d="M256 283c37-58 90-61 131-14-47 4-79 34-96 69" fill="#c9ec79" stroke="#202925" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M315 387v26m56-27v27m-74 0h38m18 0h38" stroke="#e5684b" stroke-width="10" stroke-linecap="round"/>
+</svg>

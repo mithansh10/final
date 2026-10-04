@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse and search Udemy HTML lessons, exercises, and project files from Mithansh's portfolio workspace.">
+  <title>Udemy Project Library | Mithansh</title>
+  <style>
+    :root{color-scheme:light;--ink:#1d1924;--muted:#504b5a;--line:#a29eaa;--paper:#f7f4fb;--green:#3f2e56;--lime:#998eaa}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main{width:min(1080px,calc(100% - 40px));margin:0 auto;padding:42px 0 80px}.top-links{display:flex;flex-wrap:wrap;gap:20px}
+    .top-links a{color:var(--muted);font-size:.9rem;font-weight:700;text-decoration:none}.top-links a:hover,.top-links a:focus-visible{color:var(--green)}
+    .eyebrow{margin:50px 0 8px;color:var(--green);font-size:.76rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(2.5rem,7vw,5rem);letter-spacing:-.065em;line-height:1.02}.intro{max-width:700px;color:var(--muted);font-size:1.08rem}
+    .controls{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:30px 0 16px}.search{display:grid;gap:8px;width:min(100%,520px);font-size:.9rem;font-weight:700}
+    input{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:white;font:inherit;color:var(--ink)}
+    input:focus-visible,.card:focus-visible{outline:3px solid #763756;outline-offset:3px}.count{margin:0;color:var(--muted);font-size:.9rem;white-space:nowrap}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+    .card{position:relative;display:flex;min-height:106px;flex-direction:column;justify-content:center;gap:5px;padding:15px 42px 15px 16px;border:1px solid var(--line);border-radius:14px;background:white;color:var(--ink);text-decoration:none;transition:transform .18s,border-color .18s}
+    .card:hover{transform:translateY(-2px);border-color:#3f2e56}.card[hidden]{display:none}.card-folder{overflow:hidden;color:var(--muted);font-size:.73rem;text-overflow:ellipsis;white-space:nowrap}
+    .card strong{font-size:.96rem;line-height:1.35;text-transform:capitalize}.card-arrow{position:absolute;top:15px;right:15px;color:var(--green)}
+    #empty{display:none;padding:18px;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+    @media(max-width:600px){main{width:min(100% - 32px,1080px);padding-top:28px}.eyebrow{margin-top:40px}.controls{align-items:stretch;flex-direction:column;gap:12px}.count{white-space:normal}.grid{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="top-links" aria-label="Site navigation">
+      <a href="index.html">← Back to portfolio</a>
+      <a href="c%2B%2B.html">C &amp; C++ practice ↗</a>
+    </nav>
+    <p class="eyebrow">LEARNING ARCHIVE</p>
+    <h1>Udemy Project Library</h1>
+    <p class="intro">Search the renamed Udemy HTML lessons, exercises, and project files.</p>
+    <div class="controls">
+      <label class="search" for="filter">Find a lesson or project
+        <input id="filter" type="search" placeholder="Try “grid”, “CSS”, or “flexbox”" autocomplete="off">
+      </label>
+      <p class="count" id="count" aria-live="polite"></p>
+    </div>
+    <div class="grid" id="pages">
+      <a class="card" href="html/10-0-display-grid-example.html" data-search="10 0 display grid example"><span class="card-folder">Udemy HTML</span><strong>10 0 display grid example</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-0-display-grid-index.html" data-search="10 0 display grid index"><span class="card-folder">Udemy HTML</span><strong>10 0 display grid</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-1-grid-sizing-auto-size.html" data-search="10 1 grid sizing auto size"><span class="card-folder">Udemy HTML</span><strong>10 1 grid sizing auto size</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-1-grid-sizing-fixed-size.html" data-search="10 1 grid sizing fixed size"><span class="card-folder">Udemy HTML</span><strong>10 1 grid sizing fixed size</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-1-grid-sizing-fractional-size.html" data-search="10 1 grid sizing fractional size"><span class="card-folder">Udemy HTML</span><strong>10 1 grid sizing fractional size</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-1-grid-sizing-index.html" data-search="10 1 grid sizing index"><span class="card-folder">Udemy HTML</span><strong>10 1 grid sizing</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-1-grid-sizing-minmax-size.html" data-search="10 1 grid sizing minmax size"><span class="card-folder">Udemy HTML</span><strong>10 1 grid sizing minmax size</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-1-grid-sizing-repeat.html" data-search="10 1 grid sizing repeat"><span class="card-folder">Udemy HTML</span><strong>10 1 grid sizing repeat</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-1-grid-sizing-test.html" data-search="10 1 grid sizing test"><span class="card-folder">Udemy HTML</span><strong>10 1 grid sizing test</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-2-grid-placement-demo1.html" data-search="10 2 grid placement demo1"><span class="card-folder">Udemy HTML</span><strong>10 2 grid placement demo1</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-2-grid-placement-demo2.html" data-search="10 2 grid placement demo2"><span class="card-folder">Udemy HTML</span><strong>10 2 grid placement demo2</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-2-grid-placement-demo3.html" data-search="10 2 grid placement demo3"><span class="card-folder">Udemy HTML</span><strong>10 2 grid placement demo3</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-2-grid-placement-demo4.html" data-search="10 2 grid placement demo4"><span class="card-folder">Udemy HTML</span><strong>10 2 grid placement demo4</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-2-grid-placement-exercise1.html" data-search="10 2 grid placement exercise1"><span class="card-folder">Udemy HTML</span><strong>10 2 grid placement exercise1</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-2-grid-placement-exercise2.html" data-search="10 2 grid placement exercise2"><span class="card-folder">Udemy HTML</span><strong>10 2 grid placement exercise2</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/10-2-grid-placement-exercise3.html" data-search="10 2 grid placement exercise3"><span class="card-folder">Udemy HTML</span><strong>10 2 grid placement exercise3</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/11-0-bootstrap-intro-index.html" data-search="11 0 bootstrap intro index"><span class="card-folder">Udemy HTML</span><strong>11 0 bootstrap intro</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/11-2-bootstrap-components-index.html" data-search="11 2 bootstrap components index"><span class="card-folder">Udemy HTML</span><strong>11 2 bootstrap components</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/2-1-heading-index.html" data-search="2 1 heading index"><span class="card-folder">Udemy HTML</span><strong>2 1 heading</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/2-2-paragraph-element-index.html" data-search="2 2 paragraph element index"><span class="card-folder">Udemy HTML</span><strong>2 2 paragraph element</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/2-3-paragraph-index.html" data-search="2 3 paragraph index"><span class="card-folder">Udemy HTML</span><strong>2 3 paragraph</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/3-0-list-elements-index.html" data-search="3 0 list elements index"><span class="card-folder">Udemy HTML</span><strong>3 0 list elements</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/3-2-anchor-elements-index.html" data-search="3 2 anchor elements index"><span class="card-folder">Udemy HTML</span><strong>3 2 anchor elements</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/3-3-image-elements-index.html" data-search="3 3 image elements index"><span class="card-folder">Udemy HTML</span><strong>3 3 image elements</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/4-0-file-paths-folder0-index.html" data-search="4 0 file paths folder0 index"><span class="card-folder">Udemy HTML</span><strong>4 0 file paths folder0</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/4-1-webpages-index.html" data-search="4 1 webpages index"><span class="card-folder">Udemy HTML</span><strong>4 1 webpages</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/4-1-webpages-public-about.html" data-search="4 1 webpages public about"><span class="card-folder">Udemy HTML</span><strong>4 1 webpages public about</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/4-1-webpages-public-contact.html" data-search="4 1 webpages public contact"><span class="card-folder">Udemy HTML</span><strong>4 1 webpages public contact</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/5-1-adding-css-external.html" data-search="5 1 adding css external"><span class="card-folder">Udemy HTML</span><strong>5 1 adding css external</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/5-1-adding-css-index.html" data-search="5 1 adding css index"><span class="card-folder">Udemy HTML</span><strong>5 1 adding css</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/5-1-adding-css-inline.html" data-search="5 1 adding css inline"><span class="card-folder">Udemy HTML</span><strong>5 1 adding css inline</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/5-1-adding-css-internal.html" data-search="5 1 adding css internal"><span class="card-folder">Udemy HTML</span><strong>5 1 adding css internal</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/5-3-css-selectors-index.html" data-search="5 3 css selectors index"><span class="card-folder">Udemy HTML</span><strong>5 3 css selectors</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/6-0-css-colors-index.html" data-search="6 0 css colors index"><span class="card-folder">Udemy HTML</span><strong>6 0 css colors</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/6-1-font-properties-font-family.html" data-search="6 1 font properties font family"><span class="card-folder">Udemy HTML</span><strong>6 1 font properties font family</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/6-1-font-properties-font-size.html" data-search="6 1 font properties font size"><span class="card-folder">Udemy HTML</span><strong>6 1 font properties font size</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/6-1-font-properties-index.html" data-search="6 1 font properties index"><span class="card-folder">Udemy HTML</span><strong>6 1 font properties</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/6-3-css-box-model-index.html" data-search="6 3 css box model index"><span class="card-folder">Udemy HTML</span><strong>6 3 css box model</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/7-0-css-cascade-index.html" data-search="7 0 css cascade index"><span class="card-folder">Udemy HTML</span><strong>7 0 css cascade</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/7-1-combining-selectors-index.html" data-search="7 1 combining selectors index"><span class="card-folder">Udemy HTML</span><strong>7 1 combining selectors</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/7-2-css-positioning-index.html" data-search="7 2 css positioning index"><span class="card-folder">Udemy HTML</span><strong>7 2 css positioning</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/8-0-css-display-index.html" data-search="8 0 css display index"><span class="card-folder">Udemy HTML</span><strong>8 0 css display</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/8-1-css-float-index.html" data-search="8 1 css float index"><span class="card-folder">Udemy HTML</span><strong>8 1 css float</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/8-2-responsiveness-bootstrap.html" data-search="8 2 responsiveness bootstrap"><span class="card-folder">Udemy HTML</span><strong>8 2 responsiveness bootstrap</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/8-2-responsiveness-flexbox.html" data-search="8 2 responsiveness flexbox"><span class="card-folder">Udemy HTML</span><strong>8 2 responsiveness flexbox</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/8-2-responsiveness-grid.html" data-search="8 2 responsiveness grid"><span class="card-folder">Udemy HTML</span><strong>8 2 responsiveness grid</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/8-2-responsiveness-index.html" data-search="8 2 responsiveness index"><span class="card-folder">Udemy HTML</span><strong>8 2 responsiveness</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/8-2-responsiveness-media-query.html" data-search="8 2 responsiveness media query"><span class="card-folder">Udemy HTML</span><strong>8 2 responsiveness media query</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/8-3-media-query-index.html" data-search="8 3 media query index"><span class="card-folder">Udemy HTML</span><strong>8 3 media query</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/9-0-display-flex-absolute-position.html" data-search="9 0 display flex absolute position"><span class="card-folder">Udemy HTML</span><strong>9 0 display flex absolute position</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/9-0-display-flex-flex.html" data-search="9 0 display flex flex"><span class="card-folder">Udemy HTML</span><strong>9 0 display flex flex</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/9-0-display-flex-float.html" data-search="9 0 display flex float"><span class="card-folder">Udemy HTML</span><strong>9 0 display flex float</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/9-0-display-flex-html-table.html" data-search="9 0 display flex html table"><span class="card-folder">Udemy HTML</span><strong>9 0 display flex html table</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/9-0-display-flex-index.html" data-search="9 0 display flex index"><span class="card-folder">Udemy HTML</span><strong>9 0 display flex</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/9-0-display-flex-inline-block.html" data-search="9 0 display flex inline block"><span class="card-folder">Udemy HTML</span><strong>9 0 display flex inline block</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+      <a class="card" href="html/9-1-flex-direction-index.html" data-search="9 1 flex direction index"><span class="card-folder">Udemy HTML</span><strong>9 1 flex direction</strong><span class="card-arrow" aria-hidden="true">↗</span></a>
+    </div>
+    <p id="empty">No pages match that search. Try a different keyword.</p>
+  </main>
+  <script>
+    const input = document.querySelector('#filter');
+    const cards = [...document.querySelectorAll('.card')];
+    const count = document.querySelector('#count');
+    const empty = document.querySelector('#empty');
+    function updatePages() {
+      const query = input.value.trim().toLowerCase();
+      let visible = 0;
+      for (const card of cards) {
+        const match = card.dataset.search.includes(query);
+        card.hidden = !match;
+        if (match) visible += 1;
+      }
+      count.textContent = `${visible} of ${cards.length} pages`;
+      empty.style.display = visible ? 'none' : 'block';
+    }
+    input.addEventListener('input', updatePages);
+    updatePages();
+  </script>
+</body>
+</html>

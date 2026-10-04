@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap</title>
+    <!-- TODO 1: Add the Bootstrap link here. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* TODO 4: Use flexbox to center the card in the vertical and horizontal center. */
+      .flex-container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  
+    <style data-portfolio-theme>
+:root {
+  color-scheme: light;
+  --ink: #1d1924;
+  --muted: #504b5a;
+  --paper: #f7f4fb;
+  --surface: #fff;
+  --line: #a29eaa;
+  --green: #3f2e56;
+  --lime: #998eaa;
+  --coral: #763756;
+}
+
+:where(*, *::before, *::after) {
+  box-sizing: border-box;
+}
+
+:where(html) {
+  scroll-behavior: smooth;
+}
+
+:where(body) {
+  margin: 0;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image: radial-gradient(#a69eac 0.7px, transparent 0.7px);
+  background-size: 18px 18px;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  color: var(--green);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+:where(a) {
+  color: var(--green);
+  text-underline-offset: 4px;
+}
+
+:where(a:hover) {
+  color: var(--coral);
+}
+
+:where(button, input, select, textarea) {
+  font: inherit;
+}
+
+:where(button, input[type="button"], input[type="submit"], input[type="reset"]) {
+  color: var(--surface);
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+:where(button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover) {
+  border-color: var(--coral);
+  background-color: var(--coral);
+}
+
+:where(:focus-visible) {
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(html) {
+    scroll-behavior: auto;
+  }
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <!-- TODO 2: Add the Bootstrap Prebuilt Card here -->
+      <div class="card" style="width: 18rem">
+        <img src="flower.jpg" class="card-img-top" alt="sunflower" />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <!-- TODO 3: Change the image src to display the flower.jpg image. -->
+          <a href="../index.html#projects" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

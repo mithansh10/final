@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Green leaf">
+  <rect width="200" height="200" rx="18" fill="#edf4ed"/>
+  <path d="M48 150C48 71 96 34 159 35c4 63-30 112-108 115" fill="#36734e"/>
+  <path d="M54 148c31-32 58-58 93-91m-60 61 1-37m22 15 25-2" fill="none" stroke="#c6e0bf" stroke-width="7" stroke-linecap="round"/>
+</svg>

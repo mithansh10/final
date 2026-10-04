@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <!-- TODO
+1. Make both paragraph elements wrap around the image.
+2. Use Float to move the cat div to the left and the dog div to the right.
+3. Use clear to make the footer go below both the cat and dog div. -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Float</title>
+    <style>
+      div {
+        display: inline-block;
+        width: 40%;
+      }
+
+      p {
+        font-size: 2em;
+      }
+
+      .cat {
+        float: left;
+        background-color: aquamarine;
+      }
+
+      .dog {
+        float: right;
+        background-color: coral;
+      }
+
+      footer {
+        text-align: center;
+        clear: both;
+        background-color: blueviolet;
+      }
+      img {
+        float: left;
+      }
+    </style>
+  
+    <style data-portfolio-theme>
+:root {
+  color-scheme: light;
+  --ink: #1d1924;
+  --muted: #504b5a;
+  --paper: #f7f4fb;
+  --surface: #fff;
+  --line: #a29eaa;
+  --green: #3f2e56;
+  --lime: #998eaa;
+  --coral: #763756;
+}
+
+:where(*, *::before, *::after) {
+  box-sizing: border-box;
+}
+
+:where(html) {
+  scroll-behavior: smooth;
+}
+
+:where(body) {
+  margin: 0;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image: radial-gradient(#a69eac 0.7px, transparent 0.7px);
+  background-size: 18px 18px;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  color: var(--green);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+:where(a) {
+  color: var(--green);
+  text-underline-offset: 4px;
+}
+
+:where(a:hover) {
+  color: var(--coral);
+}
+
+:where(button, input, select, textarea) {
+  font: inherit;
+}
+
+:where(button, input[type="button"], input[type="submit"], input[type="reset"]) {
+  color: var(--surface);
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+:where(button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover) {
+  border-color: var(--coral);
+  background-color: var(--coral);
+}
+
+:where(:focus-visible) {
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(html) {
+    scroll-behavior: auto;
+  }
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="cat">
+      <h2>CatCSS</h2>
+
+      <img src="cat.jpeg" alt="cat in a box" />
+      <p class="first-paragraph">
+        Nap all day cat dog hate mouse eat string barf pillow no baths hate
+        everything but kitty poochy. Sleep on keyboard toy mouse squeak roll
+        over. Mesmerizing birds. Poop on grasses licks paws destroy couch
+        intently sniff hand. The dog smells bad gnaw.
+      </p>
+    </div>
+    <div class="dog">
+      <h2>DogCSS</h2>
+      <img src="dog.jpeg" alt="puppies in a basket" />
+      <p class="second-paragraph">
+        Heckin good boys and girls long woofer big ol wow very biscit long
+        woofer heck what a nice floof, long doggo noodle horse vvv very taste
+        wow. Very taste wow many pats aqua doggo he made many woofs pupperino,
+        puggo doing me a frighten.
+      </p>
+    </div>
+
+    <footer>Copyright. This is the footer</footer>
+  </body>
+</html>
